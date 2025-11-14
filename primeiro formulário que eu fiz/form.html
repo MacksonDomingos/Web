@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="styleform.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:powderblue">
+    <form>
+    <fieldset>
+        <legend>Dados Gerais</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" minlenth="3"id:"nome" required/>
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" name="nascimento" required>
+        <label for="cpf">CPF:</label>
+        <input type="cpf" minlenth="11"id:"cpf" required/>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Endereço</legend>
+        <label for="tipo_endereco">Tipo:</label>
+        <select id="tipo_endereco">
+        <option value="">Selecione</option>
+        <option value="">Rua</option>
+        <option value="">Estrada</option>
+        <option value="">Rodovia</option>
+        <option value="">Outros</option>
+        </select>
+        <label for="logradouro_endereco">Logradouro</label>
+        <input type: text id:"logradouro_endereco"/>
+        <label for="numero_endereco">Número:</label>
+        <input type="text"id:"numero endereco"/>
+        
+        <label for "complemento_endereco">complemento:</label>
+        <input type="text"id="complemento_endereco"/>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Fale Conosco</legend>
+        <label for="msg">Mensagem:</label>
+        <textarea name="mensagem" cols="30" rows="4">
+        </textarea>
+        </fieldset>
+        <fieldset>
+        <button type="submit">Enviar sua mensagen</button>
+        <button type="reset">Limpar o Formulário</button>
+        </fieldset>
+        </form>
+</body>
+</html>
